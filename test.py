@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score, classification_report
 
@@ -15,8 +15,8 @@ y = data['sentiment']
 # Split the data into training and testing sets
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 
-# Initialize the TfidfVectorizer
-vectorizer = TfidfVectorizer()
+# Initialize the CountVectorizer
+vectorizer = CountVectorizer()
 
 # Fit the vectorizer on the training data and transform the training data
 X_train_vectorized = vectorizer.fit_transform(x_train)
