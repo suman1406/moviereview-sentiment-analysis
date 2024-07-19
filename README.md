@@ -2,14 +2,6 @@
 
 This project is a sentiment analysis tool for movie reviews using machine learning. The model classifies reviews as positive or negative based on the text content.
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Setup](#setup)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Introduction
 
 This project uses a dataset of movie reviews to train a machine learning model that can predict the sentiment of new reviews. The project includes scripts for creating the dataset, training the model, and predicting sentiments.
@@ -65,3 +57,22 @@ Run the script to create the dataset:
 
 ```sh
 python create_dataset.py
+```
+This will generate a `movie_reviews.csv` file with sample movie reviews and their sentiments.
+
+## Training the Model
+
+Run the script to train the model and make predictions:
+
+```sh
+python test.py
+```
+Follow the prompts to enter your own movie reviews and get sentiment predictions.
+### Contributing
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
+## Steps to Contribute
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Make your changes.
+4. Commit and push your changes to your fork.
+5. Create a pull request to the main repository.
